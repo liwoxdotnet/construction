@@ -1,57 +1,49 @@
-# AI Agent Landing Page
+# Starwind UI
 
-![Demo](public/screenshot.jpeg)
+[![NPM version](https://img.shields.io/npm/v/starwind.svg?style=flat)](https://npmjs.org/package/starwind) [![NPM downloads](https://img.shields.io/npm/dm/starwind.svg?style=flat)](https://npmjs.org/package/starwind) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) [![Twitter Follow](https://img.shields.io/twitter/follow/webreaper.svg?style=social)](https://twitter.com/webreaper)
 
-A modern, production-ready landing page template for AI and SaaS products. Built with Astro and Tailwind CSS.
+**Create animated websites in record time.**
 
-## Features
+Starwind UI is a collection of 45+ beautifully designed, animated, and accessible components built purely with Astro and vanilla JS. Inspired by [shadcn/ui](https://ui.shadcn.com/), components are added directly to your codebase, giving you full ownership and complete control.
 
-- ⚡️ **Astro 5** - Fast, static site generation
-- 🎨 **Tailwind CSS 4** - Modern styling with CSS-first config
-- 📱 **Fully Responsive** - Mobile-first design
-- ♿ **Accessible** - Semantic HTML & ARIA compliant
-- 🎭 **Smooth Animations** - Scroll-triggered effects
-- 🎯 **SEO Ready** - Meta tags & Open Graph
-- 🧩 **Modular Components** - Easy to customize
+**[Get Started →](https://starwind.dev/docs/getting-started/installation/)** &nbsp;|&nbsp; **[Explore Components](https://starwind.dev/docs/components/)**
 
-## Sections
+## Why Starwind?
 
-- Hero with stats
-- Features grid (9 cards)
-- How it works (4 steps)
-- Testimonials (6 with company logos)
-- Pricing tiers (3 plans)
-- FAQ accordion (6 questions)
-- Contact form
-- Footer
+- **🎯 Own Your Code** — Components live in your project, not hidden in `node_modules`. Customize everything.
+- **✨ Animated by Default** — Smooth, polished animations out of the box with Tailwind CSS v4.
+- **♿ Accessible** — Keyboard navigable and screen reader friendly. Built with a11y in mind.
+- **🚀 Zero Runtime Dependencies** — Pure Astro + vanilla JS. No heavy frameworks to slow you down.
+- **🛠️ CLI-Powered** — Add only what you need with a simple `npx starwind add` command.
+
+> Looking for the main package? See [starwind-ui/cli](/packages/cli/README.md).
 
 ## Quick Start
 
+### Initialize your project
+
 ```bash
-# Install dependencies
-npm install
-
-# Start dev server
-npm run dev
-
-# Build for production
-npm run build
+npx starwind@latest init
 ```
 
-## Customization
+### Select components to add
 
-Edit content in:
+```bash
+npx starwind@latest add
+```
 
-- `src/config.ts` - Site configuration
-- `src/content/*.ts` - Features, testimonials, FAQ
-- `src/styles/globals.css` - Colors & animations
+## AI integration
 
-## Deploy
+Resources for AI:
 
-[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/new)
+- [llms.txt](https://starwind.dev/llms.txt)
+- [llms-full.txt](https://starwind.dev/llms-full.txt)
+- [MCP server](https://github.com/starwind-ui/starwind-ui-mcp)
 
-Works on Replit, Vercel, Netlify, and GitHub Pages.
+## Contributing
+
+Please read the [contributing guide](/CONTRIBUTING.md).
 
 ## License
 
-[MIT](LICENSE)
+Licensed under the [MIT license](/LICENSE).
