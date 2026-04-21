@@ -5,57 +5,143 @@ import Nav from "@/components/Nav.astro";
 ---
 
 <Layout title="Construction Design Workflow">
+
   <AnnouncementBar />
   <Nav />
 
-<main class="px-6 py-16 max-w-6xl mx-auto">
+  <div class="px-6 py-16 max-w-6xl mx-auto">
 
-  <section class="text-center mb-20">
-    <h1 class="text-4xl md:text-5xl font-bold mb-6">
-      A smarter way to manage construction design work
-    </h1>
+    <!-- HERO -->
+    <section class="text-center mb-20">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">
+        A smarter way to manage construction design work
+      </h1>
 
-    <p class="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-      Upload drawings, track revisions, and manage queries in one structured system—without email confusion or version chaos.
-    </p>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
+        Upload drawings, track revisions, and manage queries in one structured system—without email confusion or version chaos.
+      </p>
 
-    <div class="flex justify-center gap-4">
+      <div class="flex justify-center gap-4">
+        <a href="/dashboard" class="bg-black text-white px-6 py-3 rounded-lg">
+          Go to Dashboard
+        </a>
+
+        <a href="/login" class="border px-6 py-3 rounded-lg">
+          Login
+        </a>
+      </div>
+    </section>
+
+    <!-- PROBLEM -->
+    <section class="mb-20">
+      <h2 class="text-2xl md:text-3xl font-bold text-center mb-10">
+        Design work shouldn’t be this messy
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+
+        <div class="border p-6 rounded-lg">
+          <p>Drawings are shared across emails and WhatsApp with no clear structure.</p>
+        </div>
+
+        <div class="border p-6 rounded-lg">
+          <p>Multiple versions create confusion — no one knows the latest file.</p>
+        </div>
+
+        <div class="border p-6 rounded-lg">
+          <p>Important changes are not properly tracked or documented.</p>
+        </div>
+
+        <div class="border p-6 rounded-lg">
+          <p>Communication between teams becomes fragmented and unclear.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SOLUTION -->
+    <section class="mb-20 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold mb-6">
+        One structured workspace for your design team
+      </h2>
+
+      <p class="text-gray-600 max-w-2xl mx-auto mb-10">
+        Keep all your design activity in one place—files, updates, and queries—so your team stays aligned at every stage of the project.
+      </p>
+
+      <div class="grid md:grid-cols-3 gap-6">
+
+        <div class="border p-6 rounded-lg">
+          <h3 class="font-semibold mb-2">Upload Files</h3>
+          <p class="text-sm text-gray-600">
+            Add drawings and reports in one organised space.
+          </p>
+        </div>
+
+        <div class="border p-6 rounded-lg">
+          <h3 class="font-semibold mb-2">Track Updates</h3>
+          <p class="text-sm text-gray-600">
+            Every change is recorded with a clear history.
+          </p>
+        </div>
+
+        <div class="border p-6 rounded-lg">
+          <h3 class="font-semibold mb-2">Manage Queries</h3>
+          <p class="text-sm text-gray-600">
+            Raise and resolve issues without losing context.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="mb-20 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold mb-10">
+        Simple, clear, and easy to use
+      </h2>
+
+      <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+
+        <div class="border p-6 rounded-lg">
+          <h3 class="font-semibold mb-2">1. Upload</h3>
+          <p class="text-sm text-gray-600">
+            Add drawings, reports, or updates.
+          </p>
+        </div>
+
+        <div class="border p-6 rounded-lg">
+          <h3 class="font-semibold mb-2">2. Track</h3>
+          <p class="text-sm text-gray-600">
+            Every change is recorded automatically.
+          </p>
+        </div>
+
+        <div class="border p-6 rounded-lg">
+          <h3 class="font-semibold mb-2">3. Review</h3>
+          <p class="text-sm text-gray-600">
+            Team members review and resolve issues.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="text-center">
+      <h2 class="text-2xl md:text-3xl font-bold mb-6">
+        Start managing your project the right way
+      </h2>
+
+      <p class="text-gray-600 mb-8">
+        Bring clarity to your design process and keep your entire team aligned.
+      </p>
+
       <a href="/dashboard" class="bg-black text-white px-6 py-3 rounded-lg">
         Go to Dashboard
       </a>
-
-      <a href="/login" class="border px-6 py-3 rounded-lg">
-        Login
-      </a>
-    </div>
-  </section>
-
-<section class="mb-20">
-  <h2 class="text-2xl md:text-3xl font-bold text-center mb-10">
-    Design work shouldn’t be this messy
-  </h2>
-
-  <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-
-    <div class="border p-6 rounded-lg">
-      <p>Drawings are shared across emails and WhatsApp with no clear structure.</p>
-    </div>
-
-    <div class="border p-6 rounded-lg">
-      <p>Multiple versions create confusion — no one knows the latest file.</p>
-    </div>
-
-    <div class="border p-6 rounded-lg">
-      <p>Important changes are not properly tracked or documented.</p>
-    </div>
-
-    <div class="border p-6 rounded-lg">
-      <p>Communication between teams becomes fragmented and unclear.</p>
-    </div>
+    </section>
 
   </div>
-</section>
-
-</main>
 
 </Layout>
