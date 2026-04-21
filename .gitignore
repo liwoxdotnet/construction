@@ -1,9 +1,6 @@
 # build output
 dist/
 
-# internal context
-.context/
-
 # generated types
 .astro/
 
@@ -16,12 +13,6 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# turbo
-.turbo
-
-# vitest
-coverage/
-
 # environment variables
 .env
 .env.production
@@ -31,12 +22,3 @@ coverage/
 
 # jetbrains setting folder
 .idea/
-
-# vendor folders
-.netlify
-.vercel
-.wrangler
-
-# yalc
-packages/*/yalc.lock
-packages/*/.yalc/
