@@ -23,7 +23,7 @@ import Layout from "../layouts/Layout.astro";
 
       <h1 class="text-2xl font-bold mb-6">My Work</h1>
 
-      <!-- Upload -->
+      <!-- Upload Section -->
       <div class="border p-6 rounded-lg mb-8">
         <h2 class="font-semibold mb-4">Upload Design</h2>
 
@@ -35,11 +35,23 @@ import Layout from "../layouts/Layout.astro";
           class="w-full border p-2 mb-4 rounded"
         ></textarea>
 
-        <button onclick="uploadFile()" class="bg-black text-white px-4 py-2 rounded">
+        <button
+          onclick="uploadFile()"
+          class="bg-black text-white px-4 py-2 rounded"
+        >
           Upload
         </button>
 
         <p id="uploadStatus" class="text-sm text-gray-600 mt-3"></p>
+      </div>
+
+      <!-- Updates -->
+      <div class="border p-6 rounded-lg mb-8">
+        <h2 class="font-semibold mb-4">Recent Updates</h2>
+
+        <div id="updatesList" class="text-gray-600 text-sm">
+          No updates yet.
+        </div>
       </div>
 
       <!-- Queries -->
@@ -52,7 +64,10 @@ import Layout from "../layouts/Layout.astro";
           class="w-full border p-2 mb-4 rounded"
         />
 
-        <button onclick="submitQuery()" class="bg-black text-white px-4 py-2 rounded">
+        <button
+          onclick="submitQuery()"
+          class="bg-black text-white px-4 py-2 rounded"
+        >
           Submit
         </button>
 
@@ -63,10 +78,11 @@ import Layout from "../layouts/Layout.astro";
 
   </div>
 
-  <script>
+  <!-- SCRIPT (THIS IS THE FIX) -->
+  <script is:inline>
     const API_BASE = "https://api.liwox-net.workers.dev";
 
-    async function uploadFile() {
+    window.uploadFile = async function () {
       const file = document.getElementById("fileInput").files[0];
       const description = document.getElementById("description").value;
 
@@ -95,9 +111,9 @@ import Layout from "../layouts/Layout.astro";
       } catch (err) {
         document.getElementById("uploadStatus").textContent = "Upload failed";
       }
-    }
+    };
 
-    async function submitQuery() {
+    window.submitQuery = async function () {
       const query = document.getElementById("queryInput").value;
 
       if (!query) return;
@@ -121,7 +137,7 @@ import Layout from "../layouts/Layout.astro";
       } catch (err) {
         document.getElementById("queryStatus").textContent = "Failed";
       }
-    }
+    };
   </script>
 
 </Layout>
