@@ -1,0 +1,72 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Dashboard">
+
+  <div class="flex min-h-screen">
+
+    <!-- SIDEBAR -->
+    <aside class="w-64 border-r p-6 hidden md:block">
+
+      <h2 class="text-xl font-bold mb-6">Dashboard</h2>
+
+      <nav class="flex flex-col gap-4 text-sm">
+        <a href="#" class="text-black font-medium">My Work</a>
+        <a href="#" class="text-gray-600">Upload</a>
+        <a href="#" class="text-gray-600">Queries</a>
+        <a href="#" class="text-gray-600">Versions</a>
+      </nav>
+
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="flex-1 p-8">
+
+      <h1 class="text-2xl font-bold mb-6">My Work</h1>
+
+      <!-- Upload Section -->
+      <div class="border p-6 rounded-lg mb-8">
+        <h2 class="font-semibold mb-4">Upload Design</h2>
+
+        <input type="file" class="mb-4" />
+
+        <textarea
+          placeholder="Describe update..."
+          class="w-full border p-2 mb-4 rounded"
+        ></textarea>
+
+        <button class="bg-black text-white px-4 py-2 rounded">
+          Upload
+        </button>
+      </div>
+
+      <!-- Updates -->
+      <div class="border p-6 rounded-lg mb-8">
+        <h2 class="font-semibold mb-4">Recent Updates</h2>
+
+        <p class="text-gray-600 text-sm">
+          No updates yet.
+        </p>
+      </div>
+
+      <!-- Queries -->
+      <div class="border p-6 rounded-lg">
+        <h2 class="font-semibold mb-4">Queries</h2>
+
+        <input
+          placeholder="Raise a query..."
+          class="w-full border p-2 mb-4 rounded"
+        />
+
+        <button class="bg-black text-white px-4 py-2 rounded">
+          Submit
+        </button>
+
+      </div>
+
+    </main>
+
+  </div>
+
+</Layout>
