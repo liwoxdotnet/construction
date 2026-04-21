@@ -1,38 +1,47 @@
 ---
 import { ThemeToggle } from "@/components/starwind/theme-toggle";
-
 import AnnouncementBar from "./AnnouncementBar.astro";
 ---
 
-<!-- <div class="sticky top-0 z-50"> -->
 <AnnouncementBar />
 
 <nav class="bg-background sticky top-0 z-50 border-b py-3 shadow-md">
   <div class="container mx-auto flex items-center justify-between px-4">
+
+    <!-- LEFT -->
     <div class="flex items-center gap-8">
-      <a href="/" class="text-2xl font-semibold hover:opacity-80">Starwind UI</a>
-      <nav class="flex items-center gap-4">
+      <a href="/" class="text-2xl font-semibold hover:opacity-80">
+        Liwox Construction
+      </a>
+
+      <div class="hidden md:flex items-center gap-4">
         <a
-          href="/pages/sidebar-demo"
-          class="text-muted-foreground hover:text-foreground text-sm transition-colors"
+          href="/"
+          class="text-sm text-gray-600 hover:text-black transition-colors"
         >
-          Sidebar
+          Home
         </a>
+
         <a
-          href="/pages/sidebar-nested"
-          class="text-muted-foreground hover:text-foreground text-sm transition-colors"
+          href="/dashboard"
+          class="text-sm text-gray-600 hover:text-black transition-colors"
         >
-          Nested Sidebar
+          Dashboard
         </a>
-        <a
-          href="/pages/markdown-example"
-          class="text-muted-foreground hover:text-foreground text-sm transition-colors"
-        >
-          Prose Demo
-        </a>
-      </nav>
+      </div>
     </div>
-    <ThemeToggle />
+
+    <!-- RIGHT -->
+    <div class="flex items-center gap-4">
+      <a
+        href="/login"
+        class="border px-4 py-2 rounded-lg text-sm hover:bg-gray-100"
+      >
+        Login
+      </a>
+
+      <ThemeToggle />
+    </div>
+
   </div>
 </nav>
-<!-- </div> -->
